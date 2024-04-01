@@ -81,7 +81,7 @@ int main()
 	// даем сигнал на разрешение чтения клиентом
 	SetEvent(hEnableRead);
 	// пишем ответ в анонимный канал
-	for (int j = 10; j < 20; j++)
+	for (int j = 0; j < 10; j++)
 	{
 		DWORD dwBytesWritten;
 		if (!WriteFile(
